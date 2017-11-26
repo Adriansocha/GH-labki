@@ -42,5 +42,6 @@ class Labki_gh {
         }
         skaner.close();
         return count;
+        ///
     }
 }
