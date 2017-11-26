@@ -5,16 +5,18 @@ import java.util.Scanner;
 
 class Labki_gh {
 
-    public static void main(String[] args) {
-        try {
-            System.out.println("Podaj ścieżkę dostępu do pliku: ");
-            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-            String sciezka = br.readLine();
-            FileReader in = new FileReader(sciezka);
-            System.out.println("Ilość linii: " + numberOfLines(in));
-            System.out.println("Liczba slów: " + numberOFWords(in));
-            in.close();
-            br.close();
+
+public static void main(String[] args) {
+    try {
+        System.out.println("Podaj ścieżkę dostępu do pliku: ");
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String sciezka = br.readLine();
+        FileReader in = new FileReader(sciezka);
+        FileReader im = new FileReader(sciezka);
+        System.out.println("Ilość linii: " + numberOfLines(in));
+        System.out.println("Liczba slów: " + numberOFWords(im));
+        in.close();
+        br.close();
 
         } catch (FileNotFoundException e) {
             System.out.println("Plik nie istnieje");
