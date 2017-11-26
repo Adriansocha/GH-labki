@@ -11,8 +11,9 @@ public static void main(String[] args) {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String sciezka = br.readLine();
         FileReader in = new FileReader(sciezka);
+        FileReader im = new FileReader(sciezka);
         System.out.println("Ilość linii: " + numberOfLines(in));
-        System.out.println("Liczba slów: " + numberOFWords(in));
+        System.out.println("Liczba slów: " + numberOFWords(im));
         in.close();
         br.close();
 
